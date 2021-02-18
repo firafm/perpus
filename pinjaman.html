@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <link href="https://fonts.google.com/specimen/Ballet?preview.text_type=custom" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/style.css" media="screen,projection">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Perpus Perpus</title>
+  </head>
+  <body>
+    <nav class="green lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+       <a id="logo-container" href="#" class="brand-logo white-text"><img src="img/buku.png" alt="logo" style="height:35px;">Perpus Univ A </a>
+        <ul class="right hide-on-med-and-down">
+        <li><a href="beranda.html">Beranda</a></li>
+          <li><a href="akun.html">Akun</a></li>
+          <li><a href="pinjaman.html">Pinjaman</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+        </ul>
+        <ul id="nav-mobile" class="sidenav sidenav-close">
+        <li><a href="beranda.html">Beranda</a></li>
+          <li><a href="akun.html">Akun</a></li>
+          <li><a href="pinjaman.html">Pinjaman</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+
+
+      <div class="container">
+	  <h4>DAFTAR MAHASISWA YANG MEMINJAM</h4>
+	  <div id="dttable">
+        </div>
+      </div>
+
+     
+        <div class="footer-copyright">
+          <div class="container">
+          Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+          </div>
+        </div>
+      </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="js/api.js"></script>
+    <script type="text/javascript" src="js/perpus.js"></script>
+	<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function() {
+	getPinjaman(0);
+    });
+	</script>
+	
+  </body>
+</html>

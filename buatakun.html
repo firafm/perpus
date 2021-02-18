@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link href="https://fonts.google.com/specimen/Ballet?preview.text_type=custom" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/style.css" media="screen,projection">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Perpus Perpus</title>
+  </head>
+  <body>
+    
+
+      <div class="container">
+        <h4>Akun</h4>
+	<h5> Buat Akun Baru </h5>
+
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="nama_anda" type="text" class="validate" required>
+                <label for="nama_anda">Your Name </label>
+              </div>
+		</div>
+              <div class="row">
+		<div class="input-field col s6">
+                <input id="email_anda" type="text" class="validate" required>
+                <label for="email_anda">Your Email</label>
+              </div>
+		</div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <textarea id="password_anda" class="materialize-textarea" data-length="500" required></textarea>
+                  <label for="password_anda">Your Password</label>
+                </div>
+              </div>
+
+ 		<div class="row">
+                <div class="input-field col s6">
+                  <textarea id="ketik_ulang" class="materialize-textarea" data-length="500" required></textarea>
+                  <label for="ketik_ulang">Re-type Your Password</label>
+                </div>
+              </div>
+
+
+              <br>
+              <a href="login.html" class="btn green darken-3" id="submit">Buat</a>
+ 	      <a href="login.html" class="btn green darken-3" id="submit">Sudah punya akun</a>
+          </form>
+<hr>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+          </div>
+        </div>
+      </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="js/api.js"></script>
+    <script type="text/javascript" src="js/perpus.js"></script>
+  </body>
+</html>
